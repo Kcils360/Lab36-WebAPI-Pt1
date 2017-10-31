@@ -1,0 +1,16 @@
+C:\Users\admin\codefellows\401\APILab\APILabWk8\APILabTests\obj\Debug\netcoreapp2.0\APILabTests.csprojResolveAssemblyReference.cache
+C:\Users\admin\codefellows\401\APILab\APILabWk8\APILabTests\obj\Debug\netcoreapp2.0\APILabTests.csproj.CoreCompileInputs.cache
+C:\Users\admin\codefellows\401\APILab\APILabWk8\APILabTests\obj\Debug\netcoreapp2.0\APILabTests.AssemblyInfoInputs.cache
+C:\Users\admin\codefellows\401\APILab\APILabWk8\APILabTests\obj\Debug\netcoreapp2.0\APILabTests.AssemblyInfo.cs
+C:\Users\admin\codefellows\401\APILab\APILabWk8\APILabTests\bin\Debug\netcoreapp2.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\admin\codefellows\401\APILab\APILabWk8\APILabTests\bin\Debug\netcoreapp2.0\xunit.runner.utility.netstandard15.dll
+C:\Users\admin\codefellows\401\APILab\APILabWk8\APILabTests\bin\Debug\netcoreapp2.0\xunit.runner.reporters.netstandard15.dll
+C:\Users\admin\codefellows\401\APILab\APILabWk8\APILabTests\bin\Debug\netcoreapp2.0\APILabTests.deps.json
+C:\Users\admin\codefellows\401\APILab\APILabWk8\APILabTests\bin\Debug\netcoreapp2.0\APILabTests.runtimeconfig.json
+C:\Users\admin\codefellows\401\APILab\APILabWk8\APILabTests\bin\Debug\netcoreapp2.0\APILabTests.runtimeconfig.dev.json
+C:\Users\admin\codefellows\401\APILab\APILabWk8\APILabTests\bin\Debug\netcoreapp2.0\APILabTests.dll
+C:\Users\admin\codefellows\401\APILab\APILabWk8\APILabTests\bin\Debug\netcoreapp2.0\APILabTests.pdb
+C:\Users\admin\codefellows\401\APILab\APILabWk8\APILabTests\bin\Debug\netcoreapp2.0\APILabWk8.dll
+C:\Users\admin\codefellows\401\APILab\APILabWk8\APILabTests\bin\Debug\netcoreapp2.0\APILabWk8.pdb
+C:\Users\admin\codefellows\401\APILab\APILabWk8\APILabTests\obj\Debug\netcoreapp2.0\APILabTests.dll
+C:\Users\admin\codefellows\401\APILab\APILabWk8\APILabTests\obj\Debug\netcoreapp2.0\APILabTests.pdb

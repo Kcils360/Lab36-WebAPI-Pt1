@@ -6,9 +6,12 @@ namespace APILabTests
     public class UnitTest1
     {
         [Fact]
-        public void Test1()
+        public void ThereIsAModel()
         {
-
+            ////arrange
+            ////act
+            ////assert
+    
         }
     }
 }

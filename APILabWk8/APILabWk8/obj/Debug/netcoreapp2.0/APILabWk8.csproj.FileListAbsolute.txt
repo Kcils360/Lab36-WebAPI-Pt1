@@ -1,0 +1,11 @@
+C:\Users\admin\codefellows\401\APILab\APILabWk8\APILabWk8\bin\Debug\netcoreapp2.0\APILabWk8.deps.json
+C:\Users\admin\codefellows\401\APILab\APILabWk8\APILabWk8\bin\Debug\netcoreapp2.0\APILabWk8.runtimeconfig.json
+C:\Users\admin\codefellows\401\APILab\APILabWk8\APILabWk8\bin\Debug\netcoreapp2.0\APILabWk8.runtimeconfig.dev.json
+C:\Users\admin\codefellows\401\APILab\APILabWk8\APILabWk8\bin\Debug\netcoreapp2.0\APILabWk8.dll
+C:\Users\admin\codefellows\401\APILab\APILabWk8\APILabWk8\bin\Debug\netcoreapp2.0\APILabWk8.pdb
+C:\Users\admin\codefellows\401\APILab\APILabWk8\APILabWk8\obj\Debug\netcoreapp2.0\APILabWk8.csprojResolveAssemblyReference.cache
+C:\Users\admin\codefellows\401\APILab\APILabWk8\APILabWk8\obj\Debug\netcoreapp2.0\APILabWk8.csproj.CoreCompileInputs.cache
+C:\Users\admin\codefellows\401\APILab\APILabWk8\APILabWk8\obj\Debug\netcoreapp2.0\APILabWk8.AssemblyInfoInputs.cache
+C:\Users\admin\codefellows\401\APILab\APILabWk8\APILabWk8\obj\Debug\netcoreapp2.0\APILabWk8.AssemblyInfo.cs
+C:\Users\admin\codefellows\401\APILab\APILabWk8\APILabWk8\obj\Debug\netcoreapp2.0\APILabWk8.dll
+C:\Users\admin\codefellows\401\APILab\APILabWk8\APILabWk8\obj\Debug\netcoreapp2.0\APILabWk8.pdb
