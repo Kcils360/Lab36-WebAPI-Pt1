@@ -3589,7 +3589,8 @@
       },
       "APILabWk8/1.0.0": {
         "dependencies": {
-          "Microsoft.AspNetCore.All": "2.0.0"
+          "Microsoft.AspNetCore.All": "2.0.0",
+          "Microsoft.EntityFrameworkCore.Tools": "2.0.0"
         },
         "runtime": {
           "APILabWk8.dll": {}
