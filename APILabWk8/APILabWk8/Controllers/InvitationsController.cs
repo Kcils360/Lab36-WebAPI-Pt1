@@ -17,9 +17,15 @@ namespace APILabWk8.Controllers
         {
             _context = Context;
         }
+        //get
+        [HttpGet]
+        public IEnumerable<GuestInvites> GetAll()
+        {
+            return _context.GuestInvites.ToList();
+        }
 
         //get
-        [HttpGet("{id:int?}", Name = "GetInvite")]  //id constraints
+        [HttpGet("{id}", Name = "GetInvite")]  //id constraints
         public IActionResult Get(int id)
         {
             var result = _context.GuestInvites.FirstOrDefault(i => i.ID == id);
@@ -37,7 +43,7 @@ namespace APILabWk8.Controllers
             }
             _context.GuestInvites.Add(guestInvite);
             _context.SaveChanges();
-            return CreatedAtAction("GetInvite", new { id = guestInvite.ID }, guestInvite);
+            return CreatedAtRoute("GetInvite", new { id = guestInvite.ID }, guestInvite);
         }
     }
 }
