@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace APILabWk8.Controllers
 {
-    [Route("api/invitations")]   //+++++++++++++++++++++++++++++++++attribute routing
+    [Route("api/[controller]")]   //+++++++++++++++++++++++++++++++++Route Token attribute routing
     public class InvitationsController : ControllerBase
     {
         private readonly InviteDbContext _context;
@@ -25,24 +25,24 @@ namespace APILabWk8.Controllers
         }
 
         //get
-        [HttpGet("{id}", Name = "GetInvite")]  //id constraints
-        public IActionResult Get(int id)
+        [HttpGet("{id:int}", Name = "GetInvite")]  //id constraints
+        public IActionResult Get(int id)           //model binding
         {
-            var result = _context.GuestInvites.FirstOrDefault(i => i.ID == id);
+            var result = _context.GuestInvites.FirstOrDefault(i => i.ID == id);  //the linq querry
             return Ok(result);
         }
 
         //post
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public IActionResult Post([FromBody] GuestInvites guestInvite)
+        //[ValidateAntiForgeryToken]
+        public async Task<IActionResult> Post([FromBody] GuestInvites guestInvite)
         {
             if (guestInvite == null)
             {
                 return BadRequest();
             }
-            _context.GuestInvites.Add(guestInvite);
-            _context.SaveChanges();
+            await _context.GuestInvites.AddAsync(guestInvite);
+            await _context.SaveChangesAsync();
             return CreatedAtRoute("GetInvite", new { id = guestInvite.ID }, guestInvite);
         }
     }
