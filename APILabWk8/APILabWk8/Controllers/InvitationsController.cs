@@ -19,7 +19,7 @@ namespace APILabWk8.Controllers
         }
         //get
         [HttpGet]
-        public IEnumerable<GuestInvites> GetAll()
+        public IEnumerable<GuestInvites> GetAll() //This entrire line is a method signature, that's why it can have the same name as 29
         {
             return _context.GuestInvites.ToList();
         }
@@ -37,13 +37,45 @@ namespace APILabWk8.Controllers
         //[ValidateAntiForgeryToken]
         public async Task<IActionResult> Post([FromBody] GuestInvites guestInvite)
         {
-            if (guestInvite == null)
-            {
-                return BadRequest();
-            }
+
             await _context.GuestInvites.AddAsync(guestInvite);
             await _context.SaveChangesAsync();
             return CreatedAtRoute("GetInvite", new { id = guestInvite.ID }, guestInvite);
+        }
+
+        //put
+        [HttpPut("{id:int}")]
+        public async Task<IActionResult> Put(int id, [FromBody] GuestInvites guestInvites)
+        {
+            if(!ModelState.IsValid)
+            {
+                return (BadRequest(ModelState));
+            }
+            var check = _context.GuestInvites.FirstOrDefault(c => c.ID == id);
+            if (check != null)
+            {
+                check.Name = guestInvites.Name;
+                check.Confirmed = guestInvites.Confirmed;
+                _context.Update(check);
+
+                await _context.SaveChangesAsync();
+                return Ok();
+            }
+            return BadRequest();
+        }
+
+        //delete
+        [HttpDelete("{id:int}")]
+        public async Task<IActionResult> Delete(int id)
+        {
+            var result = _context.GuestInvites.FirstOrDefault(d => d.ID == id);
+            if(result != null)
+            {
+                _context.GuestInvites.Remove(result);
+                await _context.SaveChangesAsync();
+                return Ok();
+            }
+            return BadRequest();
         }
     }
 }
